@@ -30,6 +30,13 @@ body.stop {
   .carousel-img{
     height: 100vh !important;
   }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img{
+    height: 700px!important;
+  }
+  header #logo {
+    top: 200px!important;
+    width: 350px!important;
+  }
 }
 @media (max-width: 600px) {
   .carousel-caption {
