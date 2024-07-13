@@ -33,6 +33,13 @@ body.stop {
   .carousel-inner>.item>a>img, .carousel-inner>.item>img{
     height: 700px!important;
   }
+  header nav {
+    width: 1000px!important;
+  }
+  header nav a {
+    font-size: 30px!important;
+    color: #ffd700!important;
+  }
   header #logo {
     top: 200px!important;
     width: 350px!important;
