@@ -13,10 +13,10 @@ $(function() {
           }
           // Отправка формы        
           if (check == true) {
-              $.post("/modal/php/send.php", $frm.find(".form-at select, .form-at input, .form-at textarea").serialize(),
+              $.post("./modal/php/send.php", $frm.find(".form-at select, .form-at input, .form-at textarea").serialize(),
                   function(data){
                       if(data.frm_check == 'error'){ 
-                          $frm.find(".result-at").html("<div class='error-at'>Ошибка: " + data.msg + "</div>");                    
+                          $frm.find(".result-at").html("<div class='error-at'>Error: " + data.msg + "</div>");                    
                           } else {
                           $frm.find(".result-at").html("<div class='success-at'>Ваше сообщение отправлено!</div>"); 
                           $frm.find(".form-at").fadeOut(500);

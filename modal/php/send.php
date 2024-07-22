@@ -33,7 +33,7 @@ $headers .= "Reply-To: $from\r\n";
             
             if (!mail($to, $subject, $message, $headers)) {
                 $return_arr["frm_check"] = 'error';
-                $return_arr["msg"] = "Сообщение не отправлено, ошибка почтового сервера!";    
+                $return_arr["msg"] = " Message not sent, mail server error!";    
             }        
         }        
         echo json_encode($return_arr);

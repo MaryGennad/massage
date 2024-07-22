@@ -20,8 +20,8 @@
 	<link rel="stylesheet" href="./modal/css/email.css" />
 	<!-- <link rel="stylesheet" href="style_email.css" /> -->
 	<!--Данные введенные пользователем обрабатываются кодом в mail.php-->
-	<form action="/modal/php/mail.php" method="post">
-		<link rel="stylesheet" type="text/css" href="/modal/css/component.css" />
+	<form action="./modal/php/mail.php" method="post">
+		<link rel="stylesheet" type="text/css" href="./modal/css/component.css" />
 		<link rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
 		<!-- форма обратной связи -->
@@ -31,7 +31,7 @@
 <body>
 <!-- partial:index.partial.html -->
 <header id="myHeader" class="">
-	<img id="logo" src="/img/logo betti.png"></img>
+	<img id="logo" src="./img/logo betti.png"></img>
 	<nav>
 		<a href="#about">about us</a>
 		<a href="#services">services</a>
@@ -64,11 +64,11 @@
 					<div>
 
 						<!-- <form>
-							<input name="name" placeholder="Ваше имя" class="name" required />
-							<input name="emailaddress" placeholder="Ваш email" class="email" type="email" required />
-							<textarea rows="4" cols="50" name="subject" placeholder="Текст сообщения" class="message"
+							<input name="name" placeholder="name" class="name" required />
+							<input name="emailaddress" placeholder="your email" class="email" type="email" required />
+							<textarea rows="4" cols="50" name="subject" placeholder="text message" class="message"
 								required></textarea>
-							<input name="submit" class="btn" type="submit" value="Отправить" />
+							<input name="submit" class="btn" type="submit" value="Send" />
 						</form> -->
 
 						<div class="forma">
@@ -79,7 +79,7 @@
 								</div>
 								<div class="validate-input-at w-50" data-validate="Обязательное поле">
 									<input class="input-at" type="text" name="email-at"
-										placeholder="Phone / email" />
+										placeholder="e-mail" />
 									<span class="focus-input-at"></span>
 								</div>
 								<div class="validate-input-at" data-validate="Обязательное поле">
@@ -96,8 +96,8 @@
 									data".
 									<!-- <a href="#rules">пользовательским соглашением</a> -->
 								</label>
-								<input type="hidden" name="subject-at" value="Сообщение от НОВХИТ">
-								<button id="submit-at" class="form-at-btn">Отправить</button>
+								<input type="hidden" name="subject-at" value="message от massage">
+								<button id="submit-at" class="form-at-btn">Send</button>
 							</div>
 							<div class="result-at"></div>
 						</div>
@@ -174,7 +174,7 @@
 
 	<section class="about" id="about" ">
 		<h1>about us</h1>
-		<p></p>Hello my lovelies, My name is Kate. I’m an ITEC qualified masseuse with over 10 years of experience.
+		<p>Hello my lovelies, My name is Kate. I’m an ITEC qualified masseuse with over 10 years of experience.
 I’m qualified in Sports massage, Deep tissue and Swedish massage along with sensual therapy. 
 After obtaining qualifications as a sports massage therapist I was interested in learning further about how to apply energy therapy and relaxation to the body on a higher level. That’s when I came across Tantra massage, Nuru massage and Lingam & Prostate massage in a workshop.
 I enjoyed learning about sensual massage techniques.</p>
@@ -189,22 +189,24 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 <p>Hope to see you soon.</p>
 <p>With Love, Kate x</p>
 	</section>
-	<section class="services pb-5 pt-5" id="services" style="background-image:url(/img/image1.jpeg)" >
+	<section class="services pb-5 pt-5" id="services" style="background-image:url(./img/image1.jpeg)" >
+        <h1>services</h1>
 		<!-- <section class="pb-5 pt-5" id="services"> -->
 			<div class="container">
-				<div class="row">
+				
+				<!-- <div class="row">
 					<div class="col-lg-12">
+                                          
 						<div class="center-heading">
-							<h1>services</h1>
-							<h2 class="section-title">Our Services</h2>
+							<!--<h2 class="section-title">Our Services</h2>-->
 						</div>
-					</div>
+					
 					<div class="offset-lg-3 col-lg-6">
 						<div class="center-text">
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting. </p>
 						</div>
 					</div>
-				</div>
+				
 	
 				<div class="row">
 					<div class="col-lg-3 col-sm-6">
@@ -223,7 +225,7 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 					<div class="col-lg-3 col-sm-6">
 						<a href="#" class="services-small-item">
 							<div class="icon">
-								<i class="fa fa-bed"></i>
+								<i class="far fa-check-square"></i>
 							</div>
 							<h5 class="services-title">Lorem Ipsum</h5>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -236,7 +238,7 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 					<div class="col-lg-3 col-sm-6">
 						<a href="#" class="services-small-item">
 							<div class="icon">
-								<i class="fas fa-chart-bar"></i>
+								<i class="far fa-check-square"></i>
 							</div>
 							<h5 class="services-title">Lorem Ipsum</h5>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -249,7 +251,7 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 					<div class="col-lg-3 col-sm-6">
 						<a href="#" class="services-small-item">
 							<div class="icon">
-								<i class="fa fa-shopping-cart"></i>
+								<i class="far fa-check-square"></i>
 							</div>
 							<h5 class="services-title">Lorem Ipsum</h5>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -260,13 +262,16 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 						<div class="item-bg"></div>
 					</div>
 				</div>
+</div>
+			</div> 
 			</div>
+
 		<!-- </section> -->
 	</section>
-	<section class="prices" id="prices" style="background-image:url(/img/price\ list\ betti.jpg)">
+	<section class="prices" id="prices" style="background-image:url(./img/price\ list\ betti.jpg)">
 		<!-- <h1>prices</h1> -->
 	</section>
-	<section class="contacts"  id="contacts" style="background-image:url(/img/image\ 4.jpg)">
+	<section class="contacts"  id="contacts" style="background-image:url(./img/image\ 4.jpg)">
 		<h1>contacts</h1>
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
@@ -294,6 +299,32 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 	</form>
   </div>
 	</section>
+
+<!-- social-->
+
+<div class="social">
+  <a href="#">
+    <div class="social-btn color-telegram">
+      <div class="icons8-telegram-app"></div>
+      <p class="order-1 google-font margin-telgram">Telegram</p>
+    </div>
+  </a>
+  <a href="#">
+    <div class="social-btn color-instagram">
+      <div class="icons8-instagram"></div>
+      <p class="order-1 google-font margin-instagram">instagram</p>
+    </div>
+  </a>
+  <a href="#">
+    <div class="social-btn color-whatsapp">
+      <div class="icons8-whatsapp"></div>
+      <p class="order-1 google-font margin-instagram">whats app</p>
+    </div>
+  </a>
+</div>
+
+
+
 <!-- Footer -->
 <footer class="text-center">
 	<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
@@ -305,8 +336,8 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 <a id="fixedlink" target="_blank" rel="nofollow noopener" href="#">» contact us on instagram</a>
 <!-- partial -->
   <script  src="./script.js"></script>
-  <script src="/modal/js/classie.js"></script>
-  <script src="/modal/js/modalEffects.js"></script>
-  <script src="/modal/js/formaJs.js"></script>
+  <script src="./modal/js/classie.js"></script>
+  <script src="./modal/js/modalEffects.js"></script>
+  <script src="./modal/js/formaJs.js"></script>
 </body>
 </html>
