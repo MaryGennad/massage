@@ -18,7 +18,7 @@ $(function() {
                       if(data.frm_check == 'error'){ 
                           $frm.find(".result-at").html("<div class='error-at'>Error: " + data.msg + "</div>");                    
                           } else {
-                          $frm.find(".result-at").html("<div class='success-at'>Ваше сообщение отправлено!</div>"); 
+                          $frm.find(".result-at").html("<div class='success-at'>Your message has been sent!</div>"); 
                           $frm.find(".form-at").fadeOut(500);
                           $frm.find(".input-at").val("");            
                       }

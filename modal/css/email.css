@@ -302,6 +302,28 @@ input.input-at:focus {
     font-weight: bold;
     border: 2px solid #C1A057;
 }
+
+div.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.gender{
+    display: flex !important;
+    width: 100% !important;
+    font-size: 14px;
+    flex-direction: row;
+}
+.select{
+    height: 50px;
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .validate-input-at.w-50 {
         width: 100%;

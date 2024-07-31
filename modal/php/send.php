@@ -3,14 +3,17 @@
         $to = "maria-gennadievna@mail.ru";    // Куда идет письмо
         $from = "Info.rtsanctuary@gmail.com";    // От кого идет письмо
         $name = $_POST['name-at'];
+        $lastname = $_POST['name-last'];
+        $date = $_POST['date'];
         $email = $_POST['email-at'];
+        $gender = $_POST['gender'];
         $message = $_POST['message-at'];
         $subject =    $_POST['subject-at'];
         $return_arr = array();
         $return_arr["frm_check"] = '';
         // Еще раз проверим заполненные поля формы. 
         // Эту проверку можно удалить или удалить проверку на JS
-        if($name=="" || $email=="" || $message=="" || $subject=="") {
+        if($name=="" ||$lastname=="" ||$date=="" || $email=="" || $gender=="" || $message=="" || $subject=="") {
             $return_arr["frm_check"] = 'error';
             $return_arr["msg"] = "Пожалуйста, заполните все поля!";            
         }     
@@ -23,8 +26,10 @@
         
         if ($return_arr["frm_check"] != 'error') {            
             $subject = "From my-site.ru: $subject";
-$message = "Сообщение от " .$name. "\n
+$message = "Сообщение от " .$name. "\n ".$lastname. "\n
+Data: " .$data. "\n
 Контакт: " .$email. "\n        
+Gender: " .$gender. "\n        
 Сообщение:\n" .$message;
             
 $headers = "Content-Type: text/plain; charset=utf-8\r\n";
