@@ -206,7 +206,7 @@ body {
   }
   header #logo {
     top: 200px!important;
-    width: 350px!important;
+    width: 950px!important;
   }
   header nav button {
 width: 122px;
@@ -216,11 +216,25 @@ height: 122px;
     width: 100% !important;
     height: 10px !important;
 }
+
 @media (max-width: 600px) {
   .carousel-caption {
     display: none; /* Hide the carousel text when the screen is less than 600 px wide */
   }
- 
+  .email-bt .text-call:after {
+    font-size: 90px!important;
+    margin-left: 40px!important;
+    margin-top: 44px!important;
+  }
+  .email-bt .text-call {
+    height: 175px!important;
+    width: 175px!important;
+  }
+  .email-bt {
+    height: 175px!important;
+    width: 175px!important;
+    left: 78%!important;
+  }
   }
 .read_more {
   text-align: center;
@@ -239,6 +253,9 @@ height: 122px;
 .col-sm-3 .btn:hover {
   background-color: #2d2d30;
 }
+
+
+
 @media screen and (max-width: 768px) {
 .col-sm-3 {
   margin-top: 0.666em; /* Indent to button when the screen is less than 768 px wide */ 

@@ -75,7 +75,7 @@
 
 						<div class="forma">
 							<div class="form-at">
-								
+
 								<div class="row">
 									<div class="validate-input-at w-50" data-validate="Обязательное поле">
 										<input class="input-at" type="text" name="name-at" placeholder="name" />
@@ -89,8 +89,10 @@
 
 								<div class="row">
 									<div class="validate-input-at w-50" data-validate="Обязательное поле">
-										<label for="townborn">Date of Birth</label>
-										<input class="input-at" type="date" name="date" id="dateofbirth" value="2024-08-01" min="2024-08-01" max="2040-12-31">
+										<label for="townborn">Date</label>
+										<input class="input-at" type="date" name="date" id="dateofbirth"
+											value="2024-08-01" min="2024-08-01" max="2040-12-31">
+										<!-- <input class="input-at" type="text" name="date" id="date" value="on data: 01-08-2024" min="2024-08-01" max="2040-12-31"> -->
 									</div>
 									<div class="validate-input-at w-50" data-validate="Обязательное поле">
 										<input class="input-at" type="text" name="email-at" placeholder="e-mail" />
@@ -99,13 +101,27 @@
 								</div>
 
 								<div class="validate-input-at w-50 gender" data-validate="Обязательное поле">
-									   <input class="input-at" type="text" name="gender" placeholder="Please indicate gender" />
-										<span class="focus-input-at"></span>
-									</div>			
+									<input class="input-at" type="text" name="gender"
+										placeholder="Please indicate gender" />
+									<span class="focus-input-at"></span>
+								</div>
 								<div class="validate-input-at" data-validate="Обязательное поле">
 									<textarea class="input-at" name="message-at" placeholder="Your message"></textarea>
 									<span class="focus-input-at"></span>
 								</div>
+								
+								<input checked="checked" class="input-at" id="checkbox-at" type="checkbox"
+									name="checkbox-at"
+									onchange="document.getElementById('submit-at').disabled = !this.checked;" />
+								<label for="checkbox-at">
+									To submit an application, you must make an advance payment of 50% of the cost of the service.
+									* Payment details:
+									<br>Recipient: Ivanov Ivan Ivanovich
+									<br>Recipient's account: 40178100000000000000
+									<br>or transfer to card
+									5555-5555-5555-5555
+									<br><b>Please indicate the amount of the prepayment in your message!</b>
+								</label>
 								<input checked="checked" class="input-at" id="checkbox-at" type="checkbox"
 									name="checkbox-at"
 									onchange="document.getElementById('submit-at').disabled = !this.checked;" />
@@ -144,15 +160,15 @@
 	<div id="page" class="">
 
 		<!-- <div id="fashionCarousel" class="carousel slide" data-ride="carousel"> -->
-			<!-- Indicators -->
-			<!-- <ol class="carousel-indicators">
+		<!-- Indicators -->
+		<!-- <ol class="carousel-indicators">
 				<li data-target="#fashionCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#fashionCarousel" data-slide-to="1"></li>
 				<li data-target="#fashionCarousel" data-slide-to="2"></li>
 			</ol> -->
 
-			<!-- Wrapper for slides -->
-			<!-- <div class="carousel-inner" role="listbox">
+		<!-- Wrapper for slides -->
+		<!-- <div class="carousel-inner" role="listbox">
 				<div class="item active">
 					<img src="./img/image2.jpeg" class="carousel-img" alt="Morbi dictum">
 					<div class="carousel-caption">
@@ -173,8 +189,8 @@
 
 				<div class="item">
 					<img src="./img/image0.jpeg" class="carousel-img" alt="Relieves headaches or migraines">-->
-					<!-- width="1200" height="700" -->
-					<!--<div class="carousel-caption">
+		<!-- width="1200" height="700" -->
+		<!--<div class="carousel-caption">
 						<h3>Relieves headaches or migraines</h3>
 						<p>Very often we are bothered by headaches, because due to long sitting, uncomfortable posture
 							or poor posture, blood circulation is disrupted and the nerve endings in the neck are
@@ -182,10 +198,10 @@
 					</div>
 				</div>
 			</div> -->
-			 <!-- /.carousel-inner -->
+		<!-- /.carousel-inner -->
 
-			<!-- Left and right controls -->
-			<!-- <a class="left carousel-control" href="#fashionCarousel" role="button" data-slide="prev">
+		<!-- Left and right controls -->
+		<!-- <a class="left carousel-control" href="#fashionCarousel" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
@@ -196,53 +212,53 @@
 		</div> -->
 
 
-		<link href="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.css" rel="stylesheet" />
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.js"></script>
 		<!-- Slider main container -->
 		<div class="swiper swiper-scale-effect">
-		  <!-- Swiper -->
-		  <div class="swiper-container">
-			<!-- Additional required wrapper -->
-			<div class="swiper-wrapper">
-				<!-- Slides -->
-			<div class="swiper-slide">
-			  <div class="slide-01 swiper-slide-cover"></div>
-			  <div>Slide 01</div>
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="slide-01 swiper-slide-cover"></div>
+						<div>Slide 01</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide-02 swiper-slide-cover"></div>
+						<div>Slide 02</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide-03 swiper-slide-cover"></div>
+						<div>Slide 03</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide-04 swiper-slide-cover"></div>
+						<div>Slide 04</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide-05 swiper-slide-cover"></div>
+						<div>Slide 05</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide-06 swiper-slide-cover"></div>
+						<div>Slide 06</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide-07 swiper-slide-cover"></div>
+						<div>Slide 07</div>
+					</div>
+
+
+
+				</div>
+				<!-- Add pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add navigation arrows -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
-			<div class="swiper-slide">
-			  <div class="slide-02 swiper-slide-cover"></div>
-			  <div>Slide 02</div>
-			</div>
-			<div class="swiper-slide">
-			  <div class="slide-03 swiper-slide-cover"></div>
-			  <div>Slide 03</div>
-			</div>
-			<div class="swiper-slide">
-			  <div class="slide-04 swiper-slide-cover"></div>
-			  <div>Slide 04</div>
-			</div>
-			<div class="swiper-slide">
-			  <div class="slide-05 swiper-slide-cover"></div>
-			  <div>Slide 05</div>
-			</div>
-				  <div class="swiper-slide">
-			  <div class="slide-06 swiper-slide-cover"></div>
-			  <div>Slide 06</div>
-			</div>
-				  <div class="swiper-slide">
-			  <div class="slide-07 swiper-slide-cover"></div>
-			  <div>Slide 07</div>
-			</div>
-				 
-				  
-				  
-			</div>
-		  <!-- Add pagination -->
-		  <div class="swiper-pagination"></div>
-		  <!-- Add navigation arrows -->
-		  <div class="swiper-button-prev"></div>
-		  <div class="swiper-button-next"></div>
-		  </div>
 		</div>
 
 
@@ -273,39 +289,39 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 <p>With Love, Kate x</p>
 	</section>
 	<section class=" services pb-5 pt-5" id="services" style="background-image:url(./img/image1.jpeg)">
-		<h1>services</h1>
-		<!-- <section class="pb-5 pt-5" id="services"> -->
+			<h1>services</h1>
+			<!-- <section class="pb-5 pt-5" id="services"> -->
 			<div class="container">
-				
-				
-				
-			
-			</div>
-	
-	
 
-	<!-- </section> -->
-	</section>
-	<section class="prices" id="prices" style="background-image:url(./img/price\ list\ betti.jpg)">
-		<!-- <h1>prices</h1> -->
-	</section>
-	<section class="contacts" id="contacts" style="background-image:url(./img/image\ 4.jpg)">
-		<h1>contacts</h1>
-		<!-- Container (Contact Section) -->
-		<div id="contact" class="container">
-			<!-- <h3 class="text-center">Contact</h3> -->
-			<form action="">
-				<div class="row">
-					<div class="col-md-6">
-						<p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Phone:
-							<br>
-							(+44) 7413 258641 <br>
-							+(44) 7477 492122
-						</p>
-						<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email:
-							Info.rtsanctuary@gmail.com</p>
-					</div>
-					<!-- <div class="col-md-6"><br>
+
+
+
+			</div>
+
+
+
+			<!-- </section> -->
+		</section>
+		<section class="prices" id="prices" style="background-image:url(./img/price\ list\ betti.jpg)">
+			<!-- <h1>prices</h1> -->
+		</section>
+		<section class="contacts" id="contacts" style="background-image:url(./img/image\ 4.jpg)">
+			<h1>contacts</h1>
+			<!-- Container (Contact Section) -->
+			<div id="contact" class="container">
+				<!-- <h3 class="text-center">Contact</h3> -->
+				<form action="">
+					<div class="row">
+						<div class="col-md-6">
+							<p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Phone:
+								<br>
+								(+44) 7413 258641 <br>
+								+(44) 7477 492122
+							</p>
+							<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email:
+								Info.rtsanctuary@gmail.com</p>
+						</div>
+						<!-- <div class="col-md-6"><br>
 		  <div class="row">
 			<div class="col-sm-9">
 			  <input type="text" class="form-control" id="email" name="email" placeholder="Your Email" required>
@@ -315,39 +331,39 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 			</div> 
 		  </div>
 		</div> -->
-				</div> <!-- /external .form-group -->
-			</form>
+					</div> <!-- /external .form-group -->
+				</form>
+			</div>
+		</section>
+
+		<!-- social-->
+
+		<div class="social">
+			<a href="#">
+				<div class="social-btn color-telegram">
+					<div class="icons8-telegram-app"></div>
+					<p class="order-1 google-font margin-telgram">Telegram</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="social-btn color-instagram">
+					<div class="icons8-instagram"></div>
+					<p class="order-1 google-font margin-instagram">instagram</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="social-btn color-whatsapp">
+					<div class="icons8-whatsapp"></div>
+					<p class="order-1 google-font margin-instagram">whats app</p>
+				</div>
+			</a>
 		</div>
-	</section>
-
-	<!-- social-->
-
-	<div class="social">
-		<a href="#">
-			<div class="social-btn color-telegram">
-				<div class="icons8-telegram-app"></div>
-				<p class="order-1 google-font margin-telgram">Telegram</p>
-			</div>
-		</a>
-		<a href="#">
-			<div class="social-btn color-instagram">
-				<div class="icons8-instagram"></div>
-				<p class="order-1 google-font margin-instagram">instagram</p>
-			</div>
-		</a>
-		<a href="#">
-			<div class="social-btn color-whatsapp">
-				<div class="icons8-whatsapp"></div>
-				<p class="order-1 google-font margin-instagram">whats app</p>
-			</div>
-		</a>
-	</div>
 
 
 
-	<!-- Отправка запроса на email -->
+		<!-- Отправка запроса на email -->
 
-	<!-- <div id="subscribe" class="subscribe-modal">
+		<!-- <div id="subscribe" class="subscribe-modal">
 		<iframe src="https://cp.unisender.com/ru/v5/subscribe-form/view/6ma4iqboxjikedfhpeifnupqd1j5i3hqta1n1y6e"
 			frameborder="0" scrolling="no" style="width: 100%; height: 500px;"></iframe>
 	</div>
@@ -365,7 +381,7 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 
 
 
-	<!-- <script type="text/javascript" charset="utf-8">
+		<!-- <script type="text/javascript" charset="utf-8">
 	$(function () {
 		function log_modal_event(event, modal) {
 			if (typeof console != 'undefined' && console.log) console.log("[event] " + event.type);
@@ -395,15 +411,16 @@ It's a wonderful opportunity not just for ordinary people to surprise their part
 
 
 
-	<!-- end post -->
+		<!-- end post -->
 
-	<!-- Footer -->
-	<footer class="text-center">
-		<a class="up-arrow" href="#myHeader" data-toggle="tooltip" title="TO TOP">
-			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
-		</a><br><br>
-		<p><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>2024 Kate | All Right Reserved</p>
-	</footer>
+		<!-- Footer -->
+		<footer class="text-center">
+			<a class="up-arrow" href="#myHeader" data-toggle="tooltip" title="TO TOP">
+				<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			</a><br><br>
+			<p><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>2024 Kate | All Right Reserved
+			</p>
+		</footer>
 	</div>
 	<a id="fixedlink" target="_blank" rel="nofollow noopener" href="#">» contact us on instagram</a>
 	<!-- partial -->

@@ -27,7 +27,7 @@
         if ($return_arr["frm_check"] != 'error') {            
             $subject = "From my-site.ru: $subject";
 $message = "Сообщение от " .$name. "\n ".$lastname. "\n
-Data: " .$data. "\n
+Дата: " .$date. "\n
 Контакт: " .$email. "\n        
 Gender: " .$gender. "\n        
 Сообщение:\n" .$message;
